@@ -1,0 +1,33 @@
+.nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    top: 50px;
+    left: 20px;
+    padding: 10px;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    border-radius: 5px;
+}
+@media screen and (max-width: 1080px) {
+    .nav {
+        left: initial;
+        top: initial;
+        bottom: 0;
+        width: 100%;
+    }
+}
+.nav a {
+    text-decoration: none;
+    color: rgba(7, 49, 189, 0.671);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+}
+.nav a:not(:last-child) {
+    margin-bottom: 20px;
+}
+.nav a:hover {
+    color: blue;
+}
